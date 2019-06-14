@@ -1,0 +1,140 @@
+.skills {
+    padding-bottom: 80px;
+    h3 {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    .skillIcons {
+        font-size: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        i {
+            margin: 0 60px;
+            // position: relative;
+        }
+        p {
+            font-size: 16px;
+            color: tomato;
+            text-align: center;
+            margin-top: 0;
+        }
+    }
+}
+
+.skillContainer {
+    position: relative;
+    p {
+        opacity: 0;
+    }
+    i:hover + p {
+        opacity: 1;
+    }
+}
+
+.github, 
+.vscode,
+.photoshop {
+    color: gold;
+    transition: color 0.3s;
+}
+
+.github:hover, 
+.vscode:hover,
+.photoshop:hover {
+    color: orangered;
+}
+
+.css, 
+.sass {
+    color: orangered;
+    transition: color 0.3s;
+}
+
+.css:hover, 
+.sass:hover {
+    color: #C2C9E6;
+}
+
+.jquery, 
+.html,
+.terminal {
+    color: hotpink;
+    transition: color 0.3s;
+}
+
+.jquery:hover, 
+.html:hover,
+.terminal:hover {
+    color: #C2C9E6;
+}
+
+.mobile, 
+.js {
+    color: #C6E6DB;
+    transition: color 0.3s;
+}
+
+.mobile:hover, 
+.js:hover {
+    color: gold;
+}
+
+.illustrator, 
+.react {
+    color: #C2C9E6;
+    transition: color 0.3s;
+}
+
+.illustrator:hover, 
+.react:hover {
+    color: hotpink;
+}
+
+.cssContainer {
+    top: 80px;
+}
+
+.reactContainer {
+    top: -20px
+}
+
+.jqueryContainer {
+    top: 40px;
+}
+
+.jsContainer {
+    top: -40px;
+}
+
+.htmlContainer {
+    top: 150px;
+}
+
+.illustratorContainer {
+    top: 200px;
+}
+
+.terminalContainer {
+    top: 225px;
+    left: 100px;
+}
+
+.photoshopContainer {
+    top: 100px;
+}
+
+.mobileContainer {
+    top: 175px;
+    left: 100px;
+}
+
+.sassContainer {
+    top: 100px;
+    left: 40px;
+}
+
+.vscodeContainer {
+    top: 175px;
+}

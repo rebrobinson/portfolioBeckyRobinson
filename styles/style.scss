@@ -1,1 +1,41 @@
 @import "_partials/_setup.scss";
+@import "_partials/_header.scss";
+@import "_partials/_about.scss";
+@import "_partials/_work.scss";
+@import "_partials/_skills.scss";
+
+body {
+    background: #FEF5E7;
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    color: tomato;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+// colors: 
+// cream: #FEF5E7;
+// yellow: gold;
+// orange: orangered;
+// pink: hotpink;
+// blue: #C2C9E6;
+// green: #C6E6DB;
+
+// font-family: 'Playfair Display', serif;
+// font-family: 'Space Mono', monospace;

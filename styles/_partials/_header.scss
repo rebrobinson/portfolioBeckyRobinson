@@ -1,0 +1,98 @@
+header {
+  background: url(../assets/header.svg);
+  background-size: cover; 
+  background-position: center;
+  height: 100vh;
+}
+
+.mainNav {
+  background: tomato;
+  padding: 15px 15px 5px 15px;
+   ul {
+    margin: 0;
+    display: flex;
+    list-style: none;  
+  }
+  li {
+    font-size: 20px;
+    .navIcon {
+      color: #FEF5E7;
+      padding: 0 30px;
+      transition: color .3s;
+    }
+    .navIcon:hover {
+      color: gold;
+    }
+    .navItemText {
+      font-size: 12px;
+      text-align: center;
+      margin: 0;
+      opacity: 0;
+      color: #FEF5E7;
+      transition: opacity .5s;
+    }
+    a:hover + p.navItemText{
+      opacity: 1;
+    }
+  }   
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 12vw;
+  margin-top: 25vh;
+  color: #363b87;
+}
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 25vh;
+  color: #363b87;
+}
+
+.sideNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 15px;
+  position: fixed;
+  right: 0;
+  top: 40%;
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      font-size: 10px;
+      margin: 1px 0;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row-reverse;
+    }
+    li a{
+      color: orangered;
+    }
+  }
+}
+
+.sideNavDot {
+  transition: color 0.3s;
+}
+
+.sideNavDot:hover {
+  color: hotpink;
+}
+
+.sideMenuItem a:hover + p.socialAppear {
+  opacity: 1;
+}
+
+.socialAppear {
+  margin: 0;
+  margin-right: 10px;
+  opacity: 0;
+  transition: opacity 0.4s;
+  color: hotpink;
+}

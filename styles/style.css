@@ -178,4 +178,467 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clip: rect(0 0 0);
   overflow: hidden;
 }
+
+header {
+  background: url(../assets/header.svg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.mainNav {
+  background: tomato;
+  padding: 15px 15px 5px 15px;
+}
+
+.mainNav ul {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.mainNav li {
+  font-size: 20px;
+}
+
+.mainNav li .navIcon {
+  color: #FEF5E7;
+  padding: 0 30px;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.mainNav li .navIcon:hover {
+  color: gold;
+}
+
+.mainNav li .navItemText {
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+  opacity: 0;
+  color: #FEF5E7;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.mainNav li a:hover + p.navItemText {
+  opacity: 1;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 12vw;
+  margin-top: 25vh;
+  color: #363b87;
+}
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 25vh;
+  color: #363b87;
+}
+
+.sideNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 15px;
+  position: fixed;
+  right: 0;
+  top: 40%;
+}
+
+.sideNav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sideNav ul li {
+  font-size: 10px;
+  margin: 1px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.sideNav ul li a {
+  color: orangered;
+}
+
+.sideNavDot {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.sideNavDot:hover {
+  color: hotpink;
+}
+
+.sideMenuItem a:hover + p.socialAppear {
+  opacity: 1;
+}
+
+.socialAppear {
+  margin: 0;
+  margin-right: 10px;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+  color: hotpink;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 80px 0;
+}
+
+.aboutImage {
+  position: relative;
+}
+
+.aboutImage .aboutMeSVG {
+  width: 600px;
+  height: 600px;
+}
+
+.aboutImage .beckyPhoto {
+  width: 250px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+.aboutText {
+  margin-top: 80px;
+  position: relative;
+  left: -120px;
+}
+
+.aboutText .aboutMeText {
+  margin-top: 0;
+  width: 500px;
+}
+
+.aboutText .aboutMeText .beckyRobinson {
+  color: hotpink;
+  font-weight: 700;
+}
+
+.aboutText .aboutMeText .colourful {
+  color: orangered;
+  font-weight: 700;
+}
+
+.work {
+  padding-bottom: 80px;
+}
+
+.workh3 {
+  text-align: center;
+  margin-top: 0;
+}
+
+h4 {
+  color: tomato;
+}
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+}
+
+.project1 .projectDetails,
+.project3 .projectDetails {
+  width: calc(50% - 40px);
+  margin-right: 40px;
+}
+
+.project1 .projectDescription,
+.project3 .projectDescription {
+  width: calc(50% - 40px);
+  margin-left: 40px;
+  text-align: right;
+}
+
+.project2,
+.project4 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.project2 .projectDetails,
+.project4 .projectDetails {
+  width: calc(50% - 40px);
+  margin-left: 40px;
+}
+
+.project2 .projectDescription,
+.project4 .projectDescription {
+  width: calc(50% - 40px);
+  margin-right: 40px;
+}
+
+.project2 .toolsUsed,
+.project4 .toolsUsed {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.project2 .toolsUsed p,
+.project4 .toolsUsed p {
+  margin-left: 40px;
+  margin-right: 0;
+}
+
+.project2 .projectLinks,
+.project4 .projectLinks {
+  text-align: right;
+}
+
+.toolsUsed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.toolsUsed p {
+  color: hotpink;
+  margin-right: 40px;
+  margin-top: 0;
+  line-height: 0.8;
+  font-size: 15px;
+}
+
+.projectLinks {
+  margin-top: 20px;
+}
+
+.projectLink {
+  background: gold;
+  color: orangered;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 5px 10px;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.projectLink:hover {
+  -webkit-box-shadow: 3px 3px 0 orangered;
+          box-shadow: 3px 3px 0 orangered;
+  border: 1px solid orangered;
+}
+
+.skills {
+  padding-bottom: 80px;
+}
+
+.skills h3 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.skills .skillIcons {
+  font-size: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skills .skillIcons i {
+  margin: 0 60px;
+}
+
+.skills .skillIcons p {
+  font-size: 16px;
+  color: tomato;
+  text-align: center;
+  margin-top: 0;
+}
+
+.skillContainer {
+  position: relative;
+}
+
+.skillContainer p {
+  opacity: 0;
+}
+
+.skillContainer i:hover + p {
+  opacity: 1;
+}
+
+.github,
+.vscode,
+.photoshop {
+  color: gold;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.github:hover,
+.vscode:hover,
+.photoshop:hover {
+  color: orangered;
+}
+
+.css,
+.sass {
+  color: orangered;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.css:hover,
+.sass:hover {
+  color: #C2C9E6;
+}
+
+.jquery,
+.html,
+.terminal {
+  color: hotpink;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.jquery:hover,
+.html:hover,
+.terminal:hover {
+  color: #C2C9E6;
+}
+
+.mobile,
+.js {
+  color: #C6E6DB;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.mobile:hover,
+.js:hover {
+  color: gold;
+}
+
+.illustrator,
+.react {
+  color: #C2C9E6;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.illustrator:hover,
+.react:hover {
+  color: hotpink;
+}
+
+.cssContainer {
+  top: 80px;
+}
+
+.reactContainer {
+  top: -20px;
+}
+
+.jqueryContainer {
+  top: 40px;
+}
+
+.jsContainer {
+  top: -40px;
+}
+
+.htmlContainer {
+  top: 150px;
+}
+
+.illustratorContainer {
+  top: 200px;
+}
+
+.terminalContainer {
+  top: 225px;
+  left: 100px;
+}
+
+.photoshopContainer {
+  top: 100px;
+}
+
+.mobileContainer {
+  top: 175px;
+  left: 100px;
+}
+
+.sassContainer {
+  top: 100px;
+  left: 40px;
+}
+
+.vscodeContainer {
+  top: 175px;
+}
+
+body {
+  background: #FEF5E7;
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  color: tomato;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
