@@ -35,6 +35,13 @@ h4 {
     .projectDetails {
         width: calc(50% - 40px);
         margin-right: 40px;
+        img {
+            transition: all 0.3s;
+        }
+        img:hover {
+            box-shadow: 10px -10px 0px hotpink;
+            border: 2px solid hotpink;
+        }
     }
     .projectDescription {
         width: calc(50% - 40px);
@@ -49,6 +56,13 @@ h4 {
     .projectDetails {
         width: calc(50% - 40px);
         margin-left: 40px;
+        img {
+            transition: all 0.3s;
+        }
+        img:hover {
+            box-shadow: -10px -10px 0px hotpink;
+            border: 2px solid hotpink;
+        }
     }
     .projectDescription {
         width: calc(50% - 40px);
