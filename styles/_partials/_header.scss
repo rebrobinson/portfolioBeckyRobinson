@@ -53,22 +53,45 @@ h2 {
   color: #363b87;
 }
 
-.sideNav {
+.leftSideNav,
+.rightSideNav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 15px;
   position: fixed;
-  right: 0;
   top: 40%;
+  z-index: 10;
   ul {
     list-style: none;
     padding: 0;
     li {
-      font-size: 10px;
       margin: 1px 0;
       display: flex;
       justify-content: flex-start;
+    }
+    li a {
+      text-decoration: none;
+    }
+  }
+}
+
+.leftSideNav {
+  margin-left: 15px;
+  li {
+    font-size: 30px;
+    line-height: 0.5;
+    a {
+      color: orangered;
+    }
+  }
+}
+
+.rightSideNav {
+  margin-right: 15px;
+  right: 0;
+  ul {
+    li {
+      font-size: 10px;
       flex-direction: row-reverse;
     }
     li a{
@@ -77,15 +100,15 @@ h2 {
   }
 }
 
-.sideNavDot {
+.sideNavLink {
   transition: color 0.3s;
 }
 
-.sideNavDot:hover {
+.sideNavLink:hover {
   color: hotpink;
 }
 
-.sideMenuItem a:hover + p.socialAppear {
+.sideNavItem a:hover + p.socialAppear {
   opacity: 1;
 }
 
@@ -95,4 +118,5 @@ h2 {
   opacity: 0;
   transition: opacity 0.4s;
   color: hotpink;
+  font-size: 10px;
 }

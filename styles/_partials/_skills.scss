@@ -27,6 +27,7 @@
     position: relative;
     p {
         opacity: 0;
+        transition: opacity 0.5s;
     }
     i:hover + p {
         opacity: 1;
@@ -92,8 +93,12 @@
     color: hotpink;
 }
 
+.githubContainer {
+    top: -40px;
+}
+
 .cssContainer {
-    top: 80px;
+    top: 50px;
 }
 
 .reactContainer {
@@ -101,40 +106,43 @@
 }
 
 .jqueryContainer {
-    top: 40px;
+    top: 30px;
 }
 
 .jsContainer {
-    top: -40px;
+    top: -65px;
 }
 
 .htmlContainer {
-    top: 150px;
+    top: 30px;
 }
 
 .illustratorContainer {
-    top: 200px;
+    top: 150px;
+    left: -50px;
 }
 
 .terminalContainer {
-    top: 225px;
-    left: 100px;
+    top: 50px;
+    left: 145px;
 }
 
 .photoshopContainer {
-    top: 100px;
+    top: 30px;
+    left: -50px;
 }
 
 .mobileContainer {
-    top: 175px;
-    left: 100px;
+    top: 40px;
+    left: 220px;
 }
 
 .sassContainer {
-    top: 100px;
-    left: 40px;
+    top: 75px;
+    left: 20px;
 }
 
 .vscodeContainer {
-    top: 175px;
+    top: -37px;
+    left: -20px;
 }

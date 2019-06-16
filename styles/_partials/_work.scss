@@ -11,6 +11,20 @@ h4 {
     color: tomato; 
 }
 
+.project1and2 {
+    background: url(../assets/blob1.svg);
+}
+
+.project3and4 {
+    background: url(../assets/blob2.svg);
+}
+
+.project1and2,
+.project3and4 {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .project {
     display: flex;
     margin-top: 100px;

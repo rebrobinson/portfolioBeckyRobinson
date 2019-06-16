@@ -1,0 +1,76 @@
+h3.reachOut {
+    text-align: center;
+}
+
+.contactImgAndForm {
+    display: flex;
+    .contactImage {
+        width: 50%;
+        background: url(../assets/contactSVG.svg);
+        background-repeat: no-repeat;
+        height: 600px;
+        width: 600px;
+        position: relative;
+        left: -50px;
+    }
+    form {
+        width: 50%;
+        padding-right: 80px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        font-size: 18px;
+        p {
+            color: orangered;
+        }
+        a {
+            text-decoration: none;
+            color: orangered;
+            transition: all 0.3s;
+        }
+        a:hover {
+            color: #FEF5E7;
+            background: orangered;
+        }
+        input {
+            border: none;
+            background: gold;
+            margin-bottom: 20px;
+            padding: 5px;
+            color: orangered;
+            // font-size: 18px;
+        }
+        textarea {
+            resize: none;
+            background: gold;
+            border: none;
+            margin-bottom: 20px;
+            padding: 5px;
+            color: orangered;
+        }
+        input,
+        textarea {
+            max-width: 500px;
+        }
+        input:active,
+        input:focus,
+        textarea:active,
+        textarea:focus {
+            border: 1px solid orangered;
+        }
+        button {
+            background: #C6E6DB;
+            border: none;
+            color: orangered;
+            width: 80px;
+            padding: 5px;
+            transition: all 0.3s;
+        }
+        button:hover {
+            box-shadow: 3px 3px 0px #C2C9E6;
+            border: 1px solid #C2C9E6;
+        }
+    }
+}
+
+
