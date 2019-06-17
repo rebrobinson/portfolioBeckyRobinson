@@ -454,6 +454,18 @@ h2 {
   }
 }
 
+@media (max-width: 950px) {
+  .aboutText {
+    left: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .aboutText {
+    left: 40px;
+  }
+}
+
 .work {
   padding-bottom: 80px;
 }
@@ -1112,6 +1124,12 @@ img {
 @media (max-width: 1200px) {
   .wrapper {
     max-width: 800px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    max-width: 700px;
   }
 }
 /*# sourceMappingURL=style.css.map */

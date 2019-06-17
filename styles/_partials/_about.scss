@@ -58,10 +58,14 @@
 
 @media (max-width: 950px) {
     .aboutText {
-        .aboutMeText {
-        }
+        left: 40px;
     }
 }
 
+@media (max-width: 800px) {
+    .aboutText {
+        left: 40px;
+    }
+}
 
 

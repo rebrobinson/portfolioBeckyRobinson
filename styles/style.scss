@@ -52,3 +52,9 @@ img {
         max-width: 800px;
     }
 }
+
+@media (max-width: 1000px) {
+    .wrapper {
+        max-width: 700px;
+    }
+}
