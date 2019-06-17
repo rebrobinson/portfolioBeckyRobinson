@@ -90,4 +90,42 @@
     }
 }
 
+@media (max-width: 700px) {
+    .about {
+        padding-bottom: 0;
+    }
+    .aboutImage {
+        .beckyPhoto {
+            left: 50px;
+            top: 50px;
+            width: 150px;
+        }
+    }
+    .aboutText {
+        top: -100px;
+        .aboutMeText {
+            font-size: 18px;
+        }
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .about {
+        padding-top: 40px;
+    }
+    .aboutText {
+        padding: 0 50px;
+        .aboutMeText {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .aboutText {
+        top: -70px;
+    }
+}
+
 
