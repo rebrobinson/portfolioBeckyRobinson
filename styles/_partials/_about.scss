@@ -63,8 +63,30 @@
 }
 
 @media (max-width: 800px) {
+    .about {
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+    .aboutImage {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .beckyPhoto {
+            left: 200px;
+        }
+    }
     .aboutText {
-        left: 40px;
+        left: 0px;
+        top: -90px;
+        width: 100%;
+        padding: 0 40px;
+        margin-top: 0;
+        h3 {
+            margin-top: 0;
+        }
+        .aboutMeText {
+            margin-bottom: 0;
+        }
     }
 }
 

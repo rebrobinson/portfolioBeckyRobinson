@@ -461,8 +461,37 @@ h2 {
 }
 
 @media (max-width: 800px) {
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 40px;
+  }
+  .aboutImage {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .aboutImage .beckyPhoto {
+    left: 200px;
+  }
   .aboutText {
-    left: 40px;
+    left: 0px;
+    top: -90px;
+    width: 100%;
+    padding: 0 40px;
+    margin-top: 0;
+  }
+  .aboutText h3 {
+    margin-top: 0;
+  }
+  .aboutText .aboutMeText {
+    margin-bottom: 0;
   }
 }
 
