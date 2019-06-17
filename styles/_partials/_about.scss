@@ -5,9 +5,9 @@
 
 .aboutImage {
     position: relative;
+    width: 50%;
     .aboutMeSVG {
         width: 600px;
-        height: 600px;
     }
     .beckyPhoto {
         width: 250px;
@@ -20,10 +20,10 @@
 .aboutText {
     margin-top: 80px;
     position: relative;
-    left: -120px;
+    left: -25px;
+    width: 50%;
     .aboutMeText {
         margin-top: 0;
-        width: 550px;
         .beckyRobinson,
         .everyone {
             color: hotpink;
@@ -35,5 +35,33 @@
         }
     }
 }
+
+// MEDIA QUERIES
+
+@media (max-width: 1200px) {
+    .aboutImage {
+        width: 40%;
+        .aboutMeSVG  {
+            width: 500px;
+        }
+        .beckyPhoto {
+            width: 200px;
+            top: 100px;
+            left: 90px;
+        }
+    }
+    .aboutText {
+        width: 60%;
+        left: 20px;
+    }
+}
+
+@media (max-width: 950px) {
+    .aboutText {
+        .aboutMeText {
+        }
+    }
+}
+
 
 

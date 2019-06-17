@@ -400,11 +400,11 @@ h2 {
 
 .aboutImage {
   position: relative;
+  width: 50%;
 }
 
 .aboutImage .aboutMeSVG {
   width: 600px;
-  height: 600px;
 }
 
 .aboutImage .beckyPhoto {
@@ -417,12 +417,12 @@ h2 {
 .aboutText {
   margin-top: 80px;
   position: relative;
-  left: -120px;
+  left: -25px;
+  width: 50%;
 }
 
 .aboutText .aboutMeText {
   margin-top: 0;
-  width: 550px;
 }
 
 .aboutText .aboutMeText .beckyRobinson,
@@ -434,6 +434,24 @@ h2 {
 .aboutText .aboutMeText .colourful {
   color: orangered;
   font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .aboutImage {
+    width: 40%;
+  }
+  .aboutImage .aboutMeSVG {
+    width: 500px;
+  }
+  .aboutImage .beckyPhoto {
+    width: 200px;
+    top: 100px;
+    left: 90px;
+  }
+  .aboutText {
+    width: 60%;
+    left: 20px;
+  }
 }
 
 .work {
@@ -773,8 +791,7 @@ h3.reachOut {
 }
 
 .contactImgAndForm form {
-  width: 50%;
-  padding-right: 80px;
+  width: calc(50% - 50px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -783,11 +800,13 @@ h3.reachOut {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 50px;
+  margin-right: 50px;
   font-size: 18px;
 }
 
 .contactImgAndForm form p {
   color: orangered;
+  width: 100%;
 }
 
 .contactImgAndForm form a {
@@ -1088,5 +1107,11 @@ h3 {
 img {
   width: 100%;
   max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    max-width: 800px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

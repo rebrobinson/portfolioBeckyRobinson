@@ -7,6 +7,18 @@
 @import "_partials/_footer.scss";
 @import "_partials/_animations.scss";
 
+
+// colors: 
+// cream: #FEF5E7;
+// yellow: gold;
+// orange: orangered;
+// pink: hotpink;
+// blue: #C2C9E6;
+// green: #C6E6DB;
+
+// font-family: 'Playfair Display', serif;
+// font-family: 'Space Mono', monospace;
+
 body {
     background: #FEF5E7;
     font-family: 'Space Mono', monospace;
@@ -33,13 +45,10 @@ img {
 }
 
 
-// colors: 
-// cream: #FEF5E7;
-// yellow: gold;
-// orange: orangered;
-// pink: hotpink;
-// blue: #C2C9E6;
-// green: #C6E6DB;
+// MEDIA QUERIES
 
-// font-family: 'Playfair Display', serif;
-// font-family: 'Space Mono', monospace;
+@media (max-width: 1200px) {
+    .wrapper {
+        max-width: 800px;
+    }
+}
