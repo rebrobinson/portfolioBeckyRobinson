@@ -945,7 +945,7 @@ h4 {
     left: -100px;
   }
   .htmlContainer {
-    left: 70px;
+    left: 65px;
     top: -50px;
   }
   .vscodeContainer {
@@ -1076,7 +1076,7 @@ h3.reachOut {
 
 .contactImgAndForm form p {
   color: orangered;
-  width: 100%;
+  width: 500px;
 }
 
 .contactImgAndForm form a {
@@ -1136,7 +1136,22 @@ h3.reachOut {
   border: 1px solid #C2C9E6;
 }
 
+@media (max-width: 1200px) {
+  .contactImgAndForm form p {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contactImgAndForm form p {
+    width: 300px;
+  }
+}
+
 @media (max-width: 700px) {
+  h3.reachOut {
+    margin-bottom: 30px;
+  }
   .contactImgAndForm {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1146,8 +1161,11 @@ h3.reachOut {
     margin-bottom: 120px;
   }
   .contactImgAndForm .contactImage {
-    top: 0px;
+    top: 80px;
+    left: -100px;
     position: absolute;
+    height: 500px;
+    width: 500px;
   }
   .contactImgAndForm form {
     width: 100%;
@@ -1173,9 +1191,11 @@ h3.reachOut {
     margin-bottom: 30px;
   }
   .contactImgAndForm .contactImage {
-    height: 500px;
-    width: 500px;
     top: 80px;
+    left: -100px;
+  }
+  .contactImgAndForm form {
+    padding: 0;
   }
   .contactImgAndForm form p {
     text-align: center;
