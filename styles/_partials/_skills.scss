@@ -146,3 +146,148 @@
     top: -37px;
     left: -20px;
 }
+
+
+// MEDIA QUERIES
+
+@media (max-width: 1200px) {
+    .htmlContainer {
+        left: 115px;
+    }
+    .jsContainer {
+        top: 0px;
+    }
+    .vscodeContainer {
+        top: -25px;
+        left: -50px;
+    }
+    .sassContainer {
+        left: 0px;
+    }
+    .illustratorContainer {
+        top: 228px;
+        left: -60px;
+    }
+    .mobileContainer {
+        top: 0px;
+        left: 45px;
+    }
+    .terminalContainer {
+        top: 110px;
+        left: 130px;
+    }
+    .cssContainer {
+        top: 40px;
+    }
+    .jqueryContainer {
+        top: 15px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .reactContainer {
+        top: -50px;
+    }
+    .jqueryContainer {
+        top: -25px;
+        left: -100px
+    }
+    .jsContainer {
+        top: 40px;
+        left: -100px;
+    }
+    .htmlContainer {
+        left: 70px;
+        top: -50px;
+    }
+    .vscodeContainer {
+        top: -150px
+    }
+    .sassContainer {
+        left: -60px;
+        top: -90px;
+    }
+    .terminalContainer {
+        top: 40px;
+    }
+    .mobileContainer {
+        top: -125px;
+        left: 50px;
+    }
+    .illustratorContainer {
+        top: 170px;
+        left: -10px;
+    }
+    .photoshopContainer {
+        top: 60px;
+        left: 0px;
+    }
+}
+
+@media (max-width: 700px) {
+    .cssContainer {
+        top: -60px;
+    }
+    .jqueryContainer {
+        top: -110px;
+        left: 100px;
+    }
+    .htmlContainer {
+        left: -80px;
+        top: -200px;
+    }
+    .jsContainer {
+        top: -50px;
+    }
+    .reactContainer {
+        top: -60px;
+        left: -100px;
+    }
+    .vscodeContainer {
+        top: -380px;
+        left: 45px;
+    }
+    .sassContainer {
+        left: 55px;
+        top: -360px;
+    }
+    .photoshopContainer {
+        top: -95px;
+        left: 100px;
+    }
+    .illustratorContainer {
+        top: 0px;
+        left: -100px;
+    }
+    .terminalContainer {
+        top: -370px;
+        left: 70px;
+    }
+    .mobileContainer {
+        top: -220px;
+        left: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .skills {
+        padding-bottom: 0px;
+        h3 {
+            margin-bottom: 50px;
+            font-size: 40px;
+            padding: 0 20px;
+        }
+    }
+    .skillContainer {
+        position: static;
+    }
+    .skills .skillIcons {
+        font-size: 39px;
+        i {
+            margin: 0 30px;
+        }
+        p {
+            font-size: 12px;
+        }
+    }
+}

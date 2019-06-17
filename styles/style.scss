@@ -71,3 +71,9 @@ img {
     }
 }
 
+@media (max-width: 420px) {
+    .wrapper {
+        max-width: 300px;
+    }
+}
+

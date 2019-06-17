@@ -109,3 +109,53 @@ h4 {
     box-shadow: 3px 3px 0 orangered;
     border: 1px solid orangered;
 }
+
+
+// MEDIA QUERIES
+
+@media (max-width: 1000px) {
+    .project {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .project {
+        flex-direction: column-reverse;
+    }
+    .project1 .projectDetails,
+    .project2 .projectDetails,
+    .project3 .projectDetails,
+    .project4 .projectDetails
+     {
+        width: 100%;
+        margin: 0;
+    }
+    .project1 .projectDescription,
+    .project2 .projectDescription,
+    .project3 .projectDescription,
+    .project4 .projectDescription
+     {
+        width: 100%;
+        margin: 0;
+    }
+    .project1 .projectDescription, 
+    .project3 .projectDescription {
+        text-align: left;
+    }
+    .projectDescription p {
+        display: none;
+    }
+    .project2 .projectDescription h4,
+    .project4 .projectDescription h4 {
+        text-align: right;
+    }
+}
+
+@media (max-width: 500px) {
+    .workh3 {
+        font-size: 40px;
+        padding: 0 10px;
+        margin-bottom: 0;
+    }
+}
