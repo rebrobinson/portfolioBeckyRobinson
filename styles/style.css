@@ -311,7 +311,7 @@ h2 {
 .leftSideNav ul li,
 .rightSideNav ul li {
   margin: 1px 0;
-  font-size: 10px;
+  font-size: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,7 +339,6 @@ h2 {
 }
 
 .rightSideNav ul li {
-  font-size: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -372,7 +371,54 @@ h2 {
   -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
   color: hotpink;
-  font-size: 10px;
+  font-size: 15px;
+}
+
+.mobileLeftNav {
+  display: none;
+}
+
+.mobileLeftNav button {
+  display: block;
+  margin: 0;
+  background: none;
+  border: none;
+  color: tomato;
+  position: relative;
+  z-index: 20;
+}
+
+.mobileLeftNav .leftMenuOpen {
+  display: none;
+}
+
+.mobileLeftNav .leftMenuClicked {
+  display: block;
+  padding-left: 50px;
+  padding-right: 20px;
+  padding: 10px 20px 10px 50px;
+  color: hotpink;
+  background: gold;
+  position: relative;
+  top: -95px;
+  left: -15px;
+  z-index: 15;
+}
+
+.mobileLeftNav .leftMenuClicked a {
+  padding-left: 25px;
+}
+
+@media (max-width: 800px) {
+  .leftSideNav {
+    top: 50%;
+  }
+  .mobileLeftNav {
+    display: block;
+  }
+  .leftDesktopNav {
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {
