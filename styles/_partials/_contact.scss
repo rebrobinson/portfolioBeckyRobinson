@@ -20,39 +20,39 @@ h3.reachOut {
         margin-top: 50px;
         margin-right: 50px;
         font-size: 18px;
-        p {
+        p,
+        input,
+        a,
+        textarea,
+        button {
             color: orangered;
+        }
+        p {
             width: 500px;
         }
         a {
             text-decoration: none;
-            color: orangered;
             transition: all 0.3s;
         }
         a:hover {
             color: #FEF5E7;
-            background: orangered;
-        }
-        input {
-            border: none;
-            background: gold;
-            margin-bottom: 20px;
-            padding: 5px;
-            color: orangered;
-        }
-        textarea {
-            resize: none;
-            background: gold;
-            border: none;
-            margin-bottom: 20px;
-            padding: 5px;
-            color: orangered;
         }
         input,
         textarea {
             max-width: 500px;
             -webkit-appearance: none;
             outline: none;
+            background: gold;
+            margin-bottom: 20px;
+        }
+        input,
+        textarea,
+        button {
+            border: none;
+            padding: 5px;
+        }
+        textarea {
+            resize: none;
         }
         input::placeholder,
         textarea::placeholder {
@@ -68,10 +68,7 @@ h3.reachOut {
         }
         button {
             background: #C6E6DB;
-            border: none;
-            color: orangered;
             width: 80px;
-            padding: 5px;
             transition: all 0.3s;
             -webkit-appearance: none;
         }
@@ -140,8 +137,6 @@ h3.reachOut {
     }
     .contactImgAndForm {
         .contactImage {
-            // height: 500px;
-            // width: 500px;
             top: 80px;
             left: -100px
         }

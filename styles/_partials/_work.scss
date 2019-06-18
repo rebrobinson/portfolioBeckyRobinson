@@ -31,9 +31,18 @@ h4 {
 }
 
 .project1,
+.project2,
+.project3,
+.project4 {
+    .projectDetails,
+    .projectDescription {
+        width: calc(50% - 40px);
+    }
+}
+
+.project1,
 .project3 {
     .projectDetails {
-        width: calc(50% - 40px);
         margin-right: 40px;
         img {
             transition: all 0.3s;
@@ -44,7 +53,6 @@ h4 {
         }
     }
     .projectDescription {
-        width: calc(50% - 40px);
         margin-left: 40px;
         text-align: right;
     }
@@ -54,7 +62,6 @@ h4 {
 .project4 {
     flex-direction: row-reverse;
     .projectDetails {
-        width: calc(50% - 40px);
         margin-left: 40px;
         img {
             transition: all 0.3s;
@@ -65,7 +72,6 @@ h4 {
         }
     }
     .projectDescription {
-        width: calc(50% - 40px);
         margin-right: 40px;
     }
     .toolsUsed {
@@ -94,15 +100,14 @@ h4 {
 
 .projectLinks {
     margin-top: 20px;
-}
-
-.projectLink {
-    background: gold;
-    color: orangered;
-    font-size: 16px;
-    text-decoration: none;
-    padding: 5px 10px;
-    transition: box-shadow 0.3s;
+    .projectLink {
+        background: gold;
+        color: orangered;
+        font-size: 16px;
+        text-decoration: none;
+        padding: 5px 10px;
+        transition: box-shadow 0.3s;
+    }
 }
 
 .projectLink:hover,
@@ -128,11 +133,7 @@ h4 {
     .project1 .projectDetails,
     .project2 .projectDetails,
     .project3 .projectDetails,
-    .project4 .projectDetails
-     {
-        width: 100%;
-        margin: 0;
-    }
+    .project4 .projectDetails,
     .project1 .projectDescription,
     .project2 .projectDescription,
     .project3 .projectDescription,

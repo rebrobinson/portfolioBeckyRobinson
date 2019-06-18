@@ -3,9 +3,13 @@
     padding: 80px 0;
 }
 
-.aboutImage {
+.aboutImage,
+.aboutText {
     position: relative;
     width: 50%;
+}
+
+.aboutImage {
     .aboutMeSVG {
         width: 600px;
     }
@@ -19,19 +23,20 @@
 
 .aboutText {
     margin-top: 80px;
-    position: relative;
     left: -25px;
-    width: 50%;
     .aboutMeText {
         margin-top: 0;
         .beckyRobinson,
+        .everyone,
+        .colourful {
+            font-weight: 700;
+        }
+        .beckyRobinson,
         .everyone {
             color: hotpink;
-            font-weight: 700;
         }
         .colourful {
             color: orangered;
-            font-weight: 700;
         }
     }
 }
@@ -131,11 +136,5 @@
         padding: 0 30px;
     }
 }
-
-// @media (max-width: 500px) {
-//     .aboutText {
-//         top: -40px;
-//     }
-// }
 
 

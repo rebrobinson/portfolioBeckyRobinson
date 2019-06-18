@@ -199,10 +199,6 @@ header {
   padding: 15px 15px 5px 15px;
 }
 
-.mainNav li {
-  font-size: 20px;
-}
-
 .mainNav li .navIcon {
   color: #FEF5E7;
   padding: 0 30px;
@@ -274,7 +270,7 @@ h1 {
   font-family: 'Playfair Display', serif;
   font-size: 12vw;
   margin-top: 25vh;
-  color: #363b87;
+  color: #6A5ACD;
 }
 
 h2 {
@@ -282,7 +278,7 @@ h2 {
   text-align: center;
   font-weight: 400;
   margin-top: 25vh;
-  color: #363b87;
+  color: #6A5ACD;
 }
 
 .leftNavLabel,
@@ -309,16 +305,6 @@ h2 {
 
 .leftSideNav,
 .rightSideNav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: fixed;
   top: 40%;
   z-index: 10;
@@ -347,12 +333,13 @@ h2 {
   text-decoration: none;
 }
 
-.leftSideNav {
-  margin-left: 15px;
+.leftSideNav ul li a,
+.rightSideNav ul li a {
+  color: orangered;
 }
 
-.leftSideNav li a {
-  color: orangered;
+.leftSideNav {
+  margin-left: 15px;
 }
 
 .rightSideNav {
@@ -365,10 +352,6 @@ h2 {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-}
-
-.rightSideNav ul li a {
-  color: orangered;
 }
 
 .sideNavLink {
@@ -387,7 +370,6 @@ h2 {
 }
 
 .socialAppear {
-  margin: 0;
   margin: 0 10px;
   opacity: 0;
   -webkit-transition: opacity 0.4s;
@@ -396,45 +378,12 @@ h2 {
   font-size: 15px;
 }
 
-.mobileLeftNav {
-  display: none;
-}
-
-.mobileLeftNav button {
-  display: block;
-  margin: 0;
-  background: none;
-  border: none;
-  color: tomato;
-  position: relative;
-  z-index: 20;
-}
-
-.mobileLeftNav .leftMenuOpen {
-  display: none;
-}
-
-.mobileLeftNav .leftMenuClicked {
-  display: block;
-  padding-left: 50px;
-  padding-right: 20px;
-  padding: 10px 20px 10px 50px;
-  color: hotpink;
-  background: gold;
-  position: relative;
-  top: -95px;
-  left: -15px;
-  z-index: 15;
-}
-
-.mobileLeftNav .leftMenuClicked a {
-  padding-left: 25px;
-}
-
+.mobileLeftNav,
 .mobileRightNav {
   display: none;
 }
 
+.mobileLeftNav button,
 .mobileRightNav button {
   display: block;
   margin: 0;
@@ -445,19 +394,41 @@ h2 {
   z-index: 20;
 }
 
-.mobileRightNav .rightMenuOpen {
+.leftMenuOpen,
+.rightMenuOpen {
   display: none;
 }
 
-.mobileRightNav .rightMenuClicked {
+.leftMenuClicked,
+.rightMenuClicked {
   display: block;
-  padding: 10px 20px 10px 50px;
-  color: hotpink;
-  background: gold;
-  position: relative;
+  position: absolute;
   top: -95px;
-  right: -15px;
   z-index: 15;
+}
+
+.mobileLeftNav .leftMenuClicked {
+  padding-left: 50px;
+  padding-right: 20px;
+  padding: 10px 20px 10px 50px;
+  background: #C6E6DB;
+  left: -15px;
+}
+
+.mobileLeftNav .leftMenuClicked a {
+  padding-left: 25px;
+}
+
+.mobileRightNav .rightMenuClicked {
+  padding: 10px 70px 10px 20px;
+  background: #C2C9E6;
+  right: -15px;
+}
+
+.mobileRightNav .rightMenuClicked ul li {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 @media (max-width: 800px) {
@@ -473,15 +444,11 @@ h2 {
   .rightSideNav {
     top: 50%;
   }
-  .mobileLeftNav {
-    display: block;
-  }
-  .leftDesktopNav {
-    display: none;
-  }
+  .mobileLeftNav,
   .mobileRightNav {
     display: block;
   }
+  .leftDesktopNav,
   .rightDesktopNav {
     display: none;
   }
@@ -540,7 +507,8 @@ h2 {
   padding: 80px 0;
 }
 
-.aboutImage {
+.aboutImage,
+.aboutText {
   position: relative;
   width: 50%;
 }
@@ -558,9 +526,7 @@ h2 {
 
 .aboutText {
   margin-top: 80px;
-  position: relative;
   left: -25px;
-  width: 50%;
 }
 
 .aboutText .aboutMeText {
@@ -568,14 +534,18 @@ h2 {
 }
 
 .aboutText .aboutMeText .beckyRobinson,
+.aboutText .aboutMeText .everyone,
+.aboutText .aboutMeText .colourful {
+  font-weight: 700;
+}
+
+.aboutText .aboutMeText .beckyRobinson,
 .aboutText .aboutMeText .everyone {
   color: hotpink;
-  font-weight: 700;
 }
 
 .aboutText .aboutMeText .colourful {
   color: orangered;
-  font-weight: 700;
 }
 
 @media (max-width: 1200px) {
@@ -711,8 +681,18 @@ h4 {
 }
 
 .project1 .projectDetails,
-.project3 .projectDetails {
+.project1 .projectDescription,
+.project2 .projectDetails,
+.project2 .projectDescription,
+.project3 .projectDetails,
+.project3 .projectDescription,
+.project4 .projectDetails,
+.project4 .projectDescription {
   width: calc(50% - 40px);
+}
+
+.project1 .projectDetails,
+.project3 .projectDetails {
   margin-right: 40px;
 }
 
@@ -731,7 +711,6 @@ h4 {
 
 .project1 .projectDescription,
 .project3 .projectDescription {
-  width: calc(50% - 40px);
   margin-left: 40px;
   text-align: right;
 }
@@ -746,7 +725,6 @@ h4 {
 
 .project2 .projectDetails,
 .project4 .projectDetails {
-  width: calc(50% - 40px);
   margin-left: 40px;
 }
 
@@ -765,7 +743,6 @@ h4 {
 
 .project2 .projectDescription,
 .project4 .projectDescription {
-  width: calc(50% - 40px);
   margin-right: 40px;
 }
 
@@ -807,7 +784,7 @@ h4 {
   margin-top: 20px;
 }
 
-.projectLink {
+.projectLinks .projectLink {
   background: gold;
   color: orangered;
   font-size: 16px;
@@ -843,10 +820,7 @@ h4 {
   .project1 .projectDetails,
   .project2 .projectDetails,
   .project3 .projectDetails,
-  .project4 .projectDetails {
-    width: 100%;
-    margin: 0;
-  }
+  .project4 .projectDetails,
   .project1 .projectDescription,
   .project2 .projectDescription,
   .project3 .projectDescription,
@@ -1000,16 +974,13 @@ h4 {
   top: -20px;
 }
 
-.jqueryContainer {
+.jqueryContainer,
+.htmlContainer {
   top: 30px;
 }
 
 .jsContainer {
   top: -65px;
-}
-
-.htmlContainer {
-  top: 30px;
 }
 
 .illustratorContainer {
@@ -1218,38 +1189,26 @@ h3.reachOut {
   font-size: 18px;
 }
 
-.contactImgAndForm form p {
+.contactImgAndForm form p,
+.contactImgAndForm form input,
+.contactImgAndForm form a,
+.contactImgAndForm form textarea,
+.contactImgAndForm form button {
   color: orangered;
+}
+
+.contactImgAndForm form p {
   width: 500px;
 }
 
 .contactImgAndForm form a {
   text-decoration: none;
-  color: orangered;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .contactImgAndForm form a:hover {
   color: #FEF5E7;
-  background: orangered;
-}
-
-.contactImgAndForm form input {
-  border: none;
-  background: gold;
-  margin-bottom: 20px;
-  padding: 5px;
-  color: orangered;
-}
-
-.contactImgAndForm form textarea {
-  resize: none;
-  background: gold;
-  border: none;
-  margin-bottom: 20px;
-  padding: 5px;
-  color: orangered;
 }
 
 .contactImgAndForm form input,
@@ -1257,6 +1216,19 @@ h3.reachOut {
   max-width: 500px;
   -webkit-appearance: none;
   outline: none;
+  background: gold;
+  margin-bottom: 20px;
+}
+
+.contactImgAndForm form input,
+.contactImgAndForm form textarea,
+.contactImgAndForm form button {
+  border: none;
+  padding: 5px;
+}
+
+.contactImgAndForm form textarea {
+  resize: none;
 }
 
 .contactImgAndForm form input::-webkit-input-placeholder,
@@ -1290,10 +1262,7 @@ h3.reachOut {
 
 .contactImgAndForm form button {
   background: #C6E6DB;
-  border: none;
-  color: orangered;
   width: 80px;
-  padding: 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-appearance: none;
