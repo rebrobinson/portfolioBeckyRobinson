@@ -15,6 +15,11 @@ $(function () {
         $('.leftMenuOpen').toggleClass('leftMenuClicked');
     })
 
+    $('.rightMenuButton').on('click', function (event) {
+        event.preventDefault();
+        $('.rightMenuOpen').toggleClass('rightMenuClicked');
+    })
+
     $('.skillContainer').hover(function () {
         $(this).toggleClass('vibrate-1');
     })

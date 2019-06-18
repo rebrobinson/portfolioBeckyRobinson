@@ -85,6 +85,26 @@ h2 {
   color: #363b87;
 }
 
+.leftNavLabel,
+.rightNavLabel {
+  color: #C2C9E6;
+  font-size: 15px;
+  margin: 0px;
+  position: fixed;
+}
+
+.leftNavLabel {
+  transform: rotate(270deg);
+  top: 37%;
+  left: 3px;
+}
+
+.rightNavLabel {
+  transform: rotate(90deg);
+  top: 36%;
+  right: -12px;
+}
+
 .leftSideNav,
 .rightSideNav {
   display: flex;
@@ -182,17 +202,62 @@ h2 {
   }
 }
 
+.mobileRightNav {
+  display: none;
+  button {
+    display: block;
+    margin: 0;
+    background: none;
+    border: none;
+    color: tomato;
+    position: relative;
+    z-index: 20;
+  }
+  .rightMenuOpen {
+    display: none;
+  }
+  .rightMenuClicked {
+    display: block;
+    // padding-left: 50px;
+    // padding-right: 20px;
+    padding: 10px 20px 10px 50px;
+    color: hotpink;
+    background: gold;
+    position: relative;
+    top: -95px;
+    right: -15px;
+    z-index: 15;
+    a {
+      // padding-left: 25px;
+    }
+  }
+}
 
 // MEDIA QUERIES
 
 @media (max-width: 800px) {
-  .leftSideNav {
+  .leftNavLabel {
+    top: 45%;
+    left: 12px;
+  }
+  .rightNavLabel {
+    top: 44%;
+    right: -2px;
+  }
+  .leftSideNav,
+  .rightSideNav {
     top: 50%;
   }
   .mobileLeftNav {
     display: block;
   }
   .leftDesktopNav {
+    display: none;
+  }
+  .mobileRightNav {
+    display: block;
+  }
+  .rightDesktopNav {
     display: none;
   }
 }
@@ -216,6 +281,32 @@ h2 {
         color: gold;
       }
     }
+  }
+  .leftNavLabel,
+  .rightNavLabel {
+    font-size: 12px;
+  }
+  .rightNavLabel {
+    right: 2px;
+  }
+  .leftMenuButton,
+  .rightMenuButton {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  .leftNavLabel {
+    left: 2px;
+  }
+  .rightNavLabel {
+    right: -4px;
+  }
+  .leftSideNav {
+    left: -12px;
+  }
+  .rightSideNav {
+    right: -8px;
   }
 }
 
