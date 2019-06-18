@@ -210,7 +210,9 @@ header {
   transition: color .3s;
 }
 
-.mainNav li .navIcon:hover {
+.mainNav li .navIcon:hover,
+.mainNav li .navIcon:active,
+.mainNav li .navIcon:focus {
   color: gold;
 }
 
@@ -353,7 +355,9 @@ h2 {
   transition: color 0.3s;
 }
 
-.sideNavLink:hover {
+.sideNavLink:hover,
+.sideNavLink:active,
+.sideNavLink:focus {
   color: hotpink;
 }
 
@@ -677,7 +681,9 @@ h4 {
   transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
 }
 
-.projectLink:hover {
+.projectLink:hover,
+.projectLink:active,
+.projectLink:focus {
   -webkit-box-shadow: 3px 3px 0 orangered;
           box-shadow: 3px 3px 0 orangered;
   border: 1px solid orangered;
@@ -1111,10 +1117,34 @@ h3.reachOut {
 .contactImgAndForm form input,
 .contactImgAndForm form textarea {
   max-width: 500px;
+  -webkit-appearance: none;
+  outline: none;
 }
 
+.contactImgAndForm form input::-webkit-input-placeholder,
+.contactImgAndForm form textarea::-webkit-input-placeholder {
+  color: orangered;
+}
+
+.contactImgAndForm form input:-ms-input-placeholder,
+.contactImgAndForm form textarea:-ms-input-placeholder {
+  color: orangered;
+}
+
+.contactImgAndForm form input::-ms-input-placeholder,
+.contactImgAndForm form textarea::-ms-input-placeholder {
+  color: orangered;
+}
+
+.contactImgAndForm form input::placeholder,
+.contactImgAndForm form textarea::placeholder {
+  color: orangered;
+}
+
+.contactImgAndForm form input:hover,
 .contactImgAndForm form input:active,
 .contactImgAndForm form input:focus,
+.contactImgAndForm form textarea:hover,
 .contactImgAndForm form textarea:active,
 .contactImgAndForm form textarea:focus {
   border: 1px solid orangered;
@@ -1128,9 +1158,12 @@ h3.reachOut {
   padding: 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  -webkit-appearance: none;
 }
 
-.contactImgAndForm form button:hover {
+.contactImgAndForm form button:hover,
+.contactImgAndForm form button:active,
+.contactImgAndForm form button:focus {
   -webkit-box-shadow: 3px 3px 0px #C2C9E6;
           box-shadow: 3px 3px 0px #C2C9E6;
   border: 1px solid #C2C9E6;

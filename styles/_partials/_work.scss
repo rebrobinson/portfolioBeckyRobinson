@@ -105,7 +105,9 @@ h4 {
     transition: box-shadow 0.3s;
 }
 
-.projectLink:hover {
+.projectLink:hover,
+.projectLink:active,
+.projectLink:focus {
     box-shadow: 3px 3px 0 orangered;
     border: 1px solid orangered;
 }

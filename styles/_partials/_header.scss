@@ -20,7 +20,9 @@ header {
       padding: 0 30px;
       transition: color .3s;
     }
-    .navIcon:hover {
+    .navIcon:hover,
+    .navIcon:active,
+    .navIcon:focus {
       color: gold;
     }
     .navItemText {
@@ -131,7 +133,9 @@ h2 {
   transition: color 0.3s;
 }
 
-.sideNavLink:hover {
+.sideNavLink:hover,
+.sideNavLink:active,
+.sideNavLink:focus {
   color: hotpink;
 }
 
