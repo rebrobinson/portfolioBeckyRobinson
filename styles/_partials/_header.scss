@@ -176,6 +176,8 @@ h2 {
     color: tomato;
     position: relative;
     z-index: 20;
+    -webkit-appearance: none;
+    outline: none;
   }
 }
 
