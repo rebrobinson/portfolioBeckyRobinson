@@ -276,6 +276,9 @@
     }
     .skillContainer {
         position: static;
+        p {
+            display: none;
+        }
     }
     .skills .skillIcons {
         font-size: 39px;

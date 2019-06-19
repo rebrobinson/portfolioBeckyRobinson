@@ -283,7 +283,7 @@ h2 {
 
 .leftNavLabel,
 .rightNavLabel {
-  color: #C2C9E6;
+  color: orangered;
   font-size: 15px;
   margin: 0px;
   position: fixed;
@@ -392,6 +392,9 @@ h2 {
   color: tomato;
   position: relative;
   z-index: 20;
+  -webkit-appearance: none;
+  outline: none;
+  padding: 20px;
 }
 
 .leftMenuOpen,
@@ -433,11 +436,11 @@ h2 {
 
 @media (max-width: 800px) {
   .leftNavLabel {
-    top: 45%;
+    top: 47%;
     left: 12px;
   }
   .rightNavLabel {
-    top: 44%;
+    top: 46%;
     right: -2px;
   }
   .leftSideNav,
@@ -447,6 +450,12 @@ h2 {
   .mobileLeftNav,
   .mobileRightNav {
     display: block;
+  }
+  .mobileLeftNav button {
+    left: -15px;
+  }
+  .mobileRightNav button {
+    right: -13px;
   }
   .leftDesktopNav,
   .rightDesktopNav {
@@ -785,8 +794,8 @@ h4 {
 }
 
 .projectLinks .projectLink {
-  background: gold;
-  color: orangered;
+  background: orangered;
+  color: #FEF5E7;
   font-size: 16px;
   text-decoration: none;
   padding: 5px 10px;
@@ -799,9 +808,9 @@ h4 {
 .projectLink:hover,
 .projectLink:active,
 .projectLink:focus {
-  -webkit-box-shadow: 3px 3px 0 orangered;
-          box-shadow: 3px 3px 0 orangered;
-  border: 1px solid orangered;
+  -webkit-box-shadow: 3px 3px 0 gold;
+          box-shadow: 3px 3px 0 gold;
+  border: 1px solid gold;
 }
 
 @media (max-width: 1000px) {
@@ -1143,6 +1152,9 @@ h4 {
   }
   .skillContainer {
     position: static;
+  }
+  .skillContainer p {
+    display: none;
   }
   .skills .skillIcons {
     font-size: 39px;

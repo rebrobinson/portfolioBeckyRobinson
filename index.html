@@ -15,24 +15,24 @@
     <header id="home">
         <nav class="mainNav">
             <div class="mobileMenu">
-                <button>
+                <button tabindex="0">
                     <i class="hiddenMenuSelect fas fa-ellipsis-v" aria-label="open menu"></i>
                 </button>
                 <div class="mobileMenuDropdown">
                     <ul>
-                        <li class="navItem">
+                        <li class="navItem" tabindex="0">
                             <a href="#home" class="navIcon"><i class="fas fa-home" aria-hidden="true"></i></a>
                             <p class="navItemText">home</p>
                         </li>
-                        <li class="navItem">
+                        <li class="navItem" tabindex="0">
                             <a href="#about" class="navIcon"><i class="fas fa-user-circle" aria-hidden="true"></i></a>
                             <p class="navItemText">about me</p>
                         </li>
-                        <li class="navItem">
+                        <li class="navItem" tabindex="0">
                             <a href="#projects" class="navIcon"><i class="fas fa-palette" aria-hidden="true"></i></a>
                             <p class="navItemText">projects</p>
                         </li>
-                        <li class="navItem">
+                        <li class="navItem" tabindex="0">
                             <a href="#contact" class="navIcon"><i class="fas fa-at" aria-hidden="true"></i></a>
                             <p class="navItemText">contact</p>
                         </li>
@@ -40,19 +40,19 @@
                 </div>
             </div>
             <ul class="desktopNav">
-                <li class="navItem">
+                <li class="navItem" tabindex="0">
                     <a href="#home" class="navIcon"><i class="fas fa-home" aria-hidden="true"></i></a>
                     <p class="navItemText">home</p>
                 </li>
-                <li class="navItem">
+                <li class="navItem" tabindex="0">
                     <a href="#about" class="navIcon"><i class="fas fa-user-circle" aria-hidden="true"></i></a>
                     <p class="navItemText">about me</p>
                 </li>
-                <li class="navItem">
+                <li class="navItem" tabindex="0">
                     <a href="#projects" class="navIcon"><i class="fas fa-palette" aria-hidden="true"></i></a>
                     <p class="navItemText">projects</p>
                 </li>
-                <li class="navItem">
+                <li class="navItem" tabindex="0">
                     <a href="#contact" class="navIcon"><i class="fas fa-at" aria-hidden="true"></i></a>
                     <p class="navItemText">contact</p>
                 </li>
@@ -176,7 +176,7 @@
                         <p>SCSS</p>
                         <p>jQuery</p>
                     </div>
-                    <div class="projectLinks">
+                    <div class="projectLinks" tabindex="0">
                         <a href="http://www.beckyiscoding.com/magic8ball/" class="projectLink" target="_blank">view live</a>
                         <a href="https://www.github.com/rebrobinson/becky-robinson-project-3" class="projectLink" target="_blank">view github</a>
                     </div>
@@ -198,7 +198,7 @@
                         <p>HTML</p>
                         <p>jQuery</p>
                     </div>
-                    <div class="projectLinks">
+                    <div class="projectLinks" tabindex="0">
                         <a href="http://www.beckyiscoding.com/happyHour/" class="projectLink" target="_blank">view live</a>
                         <a href="https://www.github.com/ismahanandbecky/happyHour" class="projectLink" target="_blank">view github</a>
                     </div>
@@ -220,7 +220,7 @@
                         <p>Firebase</p>
                         <p>CSS</p>
                     </div>
-                    <div class="projectLinks">
+                    <div class="projectLinks" tabindex="0">
                         <a href="https://becky-robinson-project-5.firebaseapp.com/" class="projectLink" target="_blank">view live</a>
                         <a href="https://www.github.com/rebrobinson/secretAdmirer" class="projectLink" target="_blank">view github</a>
                     </div>
@@ -241,7 +241,7 @@
                         <p>React</p>
                         <p>CSS</p>
                     </div>
-                    <div class="projectLinks">
+                    <div class="projectLinks" tabindex="0">
                         <a href="https://scrabblegenies.github.io/autocomplete/" class="projectLink" target="_blank">view live</a>
                         <a href="https://www.github.com/scrabblegenies/autocomplete" class="projectLink" target="_blank">view github</a>
                     </div>
@@ -314,12 +314,12 @@
         <div class="contactImgAndForm">
             <div class="contactImage">
             </div>
-            <form action="">
+            <form method="POST" action="https://formspree.io/rshrobinson@gmail.com">
                 <p>Hire me!! Or just send me an email. Use the form below or directly to <a href="mailto: rshrobinson@gmail.com">rshrobinson@gmail.com</a>. TTYL!</p>
                 <label for="email" class="visuallyHidden">enter your email</label>
-                <input type="email" id="email" placeholder="your email">
+                <input name="name" type="email" id="email" placeholder="your email">
                 <label for="name" class="visuallyHidden">enter your name</label>
-                <textarea name="" id="name" placeholder="your message" cols="30" rows="8"></textarea>
+                <textarea name="message" id="name" placeholder="your message" cols="30" rows="8"></textarea>
                 <button type="submit">send</button>
             </form>
         </div>

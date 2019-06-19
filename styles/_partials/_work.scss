@@ -101,8 +101,8 @@ h4 {
 .projectLinks {
     margin-top: 20px;
     .projectLink {
-        background: gold;
-        color: orangered;
+        background: orangered;
+        color: #FEF5E7;
         font-size: 16px;
         text-decoration: none;
         padding: 5px 10px;
@@ -113,8 +113,8 @@ h4 {
 .projectLink:hover,
 .projectLink:active,
 .projectLink:focus {
-    box-shadow: 3px 3px 0 orangered;
-    border: 1px solid orangered;
+    box-shadow: 3px 3px 0 gold;
+    border: 1px solid gold;
 }
 
 
